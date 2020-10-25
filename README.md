@@ -3,16 +3,16 @@
 # About Quack Toolkit
 
 ```
-Quack Toolkit is a set of tools to provide denial 
-of service attacks. Quack Toolkit includes SMS attack 
-tool, HTTP attack tool and many other attack tools.
+Это набор инструментов для отказа
+сервисных атак. Quack Toolkit включает SMS-атаку
+инструмент, инструмент атаки HTTP и многие другие инструменты атаки.
 ```
 
 ***
 
-# Getting started
+# Начинаем
 
-## Quack installation
+## Quack установка
 
 > cd quack
 
@@ -20,7 +20,7 @@ tool, HTTP attack tool and many other attack tools.
 
 > ./install.sh
 
-## Quack uninstallation
+## Удаление Quack
 
 > cd quack
 
@@ -30,11 +30,11 @@ tool, HTTP attack tool and many other attack tools.
 
 ***
 
-# Quack Toolkit execution
+# Выполнение Quack Toolkit
 
 ```
-To run Quack Toolkit you should 
-execute the following command.
+Для запуска Quack Toolkit вам необходимо:
+выполните следующую команду.
 ```
 
 > quack
@@ -45,39 +45,42 @@ usage: quack [-h] [--target <ip:port/URL/phone>]
              [--timeout <timeout>] [--threads <threads>] [-u] [--version]
 
 optional arguments:
-  -h, --help            show this help message and exit
+  -h, --help            Показать это справочное сообщение и выйти
   --target <ip:port/URL/phone>
-                        Target IP and port, URL or phone.
+                        Целевой IP-адрес и порт, URL-адрес или телефон.
   --tool [SMS|NTP|TCP|UDP|SYN|POD|SLOWLORIS|MEMCACHED|HTTP|NJRAT]
-                        Attack tool.
-  --timeout <timeout>   Timeout in seconds.
-  --threads <threads>   Threads count.
-  -u, --update          Update Quack Toolkit.
-  --version             Show Quack Toolkit version.
+                        Инструмент атаки.
+  --timeout <timeout>   Тайм-аут в секундах.
+  --threads <threads>   Количество потоков.
+  -u, --update          Обновите Quack Toolkit.
+  --version             Показать версию Quack Toolkit.
 ```
 
 ***
   
-# Quack Toolkit examples
+# Примеры Quack Toolkit
 
-## Example of the SMS attack
+## Пример SMS-атаки
     
 > quack --tool SMS --target 15554443333 --timeout 10 --threads 10
     
-## Example of the HTTP attack
+## Пример HTTP-атаки
 
 > quack --tool HTTP --target http://<span></span>example.com/ --timeout 10 --threads 10
     
-## Example of the TCP attack
+## Пример атаки TCP
 
 > quack --tool TCP --target 192.168.1.100:80 --timeout 10 --threads 10
 
 ***
 
-# Quack Toolkit disclaimer
+# Отказ от ответственности Quack Toolkit
 
 ```
-Usage of the Quack Toolkit for attacking targets without prior mutual consent is illegal.
-It is the end user's responsibility to obey all applicable local, state, federal, and international laws.
-Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+
+Использование Quack Toolkit для атаки целей без предварительного обоюдного согласия является незаконным.
+Конечный пользователь обязан соблюдать все применимые местные, государственные, федеральные и международные законы.
+Разработчики не несут ответственности и не несут ответственности за любое неправильное использование или ущерб, причиненный этой программой.
+
+
 ```
